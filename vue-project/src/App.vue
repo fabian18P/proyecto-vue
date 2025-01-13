@@ -1,11 +1,11 @@
 <template>
-  <MainView></MainView>
-  <Contador></Contador>
-  <ListaTareas></ListaTareas>
+  <!--<MainView></MainView>-->
+  <FondoPrincipanlView></FondoPrincipanlView>
 </template>
 
 <script setup>
-  import MainView from './views/MainView.vue';
+  /*import MainView from './views/MainView.vue';*/
+  import FondoPrincipanlView from './views/FondoPrincipanlView.vue';
 </script>
 
 <style scoped>
