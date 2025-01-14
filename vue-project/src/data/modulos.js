@@ -165,7 +165,7 @@ export const modulos = {
             ]
         },
         {
-            color: "yellow",
+            color: "indigo",
             numero: "3",
             nombre: "Diversidad y conservación",
             subModulo: [

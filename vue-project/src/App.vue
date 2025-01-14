@@ -1,12 +1,9 @@
 <template>
-  <!--<MainView></MainView>-->
-  <FondoPrincipanlView></FondoPrincipanlView>
+  <div>
+    <router-view></router-view> <!-- Donde se mostrarán las vistas según la ruta -->
+  </div>
 </template>
 
-<script setup>
-  /*import MainView from './views/MainView.vue';*/
-  import FondoPrincipanlView from './views/FondoPrincipanlView.vue';
-</script>
+<script setup></script>
 
-<style scoped>
-</style>
+<style scoped></style>

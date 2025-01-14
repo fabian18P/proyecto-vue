@@ -1,20 +1,18 @@
 <template>
     <h1 class="titulo text-5xl font-black">{{ home.nombre }}</h1>
-
     <ModulesBar></ModulesBar>
     <FooterComponet></FooterComponet>
-
 </template>
 
 <script setup>
-    import { home } from '../data/home';
-    import ModulesBar from '@/modules/home/ModulesBar.vue';
+    import { home } from '../data/home'
+    import ModulesBar from '@/modules/home/ModulesBar.vue'
     import FooterComponet from '../components/FooterComponet.vue'
 
     // Crear burbujas
     function createBubbles() {
       const container = document.body;
-      for (let i = 0; i < 30; i++) {
+      for (let i = 0; i < 15; i++) {
           const bubble = document.createElement('div');
           bubble.classList.add('bubble');
           bubble.style.left = `${Math.random() * 100}vw`;
@@ -30,10 +28,9 @@
 
 <style>
     body {  margin:0; overflow:hidden; background:#123524; height:100vh;
-            display:flex; justify-content:center; align-items:center;
-    }
-
+            display:flex; justify-content:center; align-items:center;}
     footer{ background:#123524;}
+    .titulo{color: #EFE3C2; text-align: center;}
 
     .bubble {position:absolute; bottom:-100px; width:40px; height:40px;
         background: #EFE3C2;
@@ -48,11 +45,6 @@
         z-index: 1;
     } @keyframes rise {
         0% {transform: translateY(0) scale(0.8);}
-        100% {transform: translateY(-100vh) scale(0.6);opacity: 0;}
-    }
-
-    .titulo{
-        color: #EFE3C2;
-        text-align: center;
+        100% {transform: translateY(-110vh) scale(0.6);opacity: 0;}
     }
 </style>

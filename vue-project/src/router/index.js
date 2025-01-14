@@ -1,28 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    /*{
+    {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: () => import('../views/FondoPrincipanlView.vue'),
     },
     {
-      path: '/contador',
-      name: 'contador',
-      component: () => import('../modules/contador/components/Contador.vue'),
-    },
-    {
-      path: '/lista-de-tareas',
-      name: 'ListaTareas',
-      component: () => import('../modules/listaTareas/components/ListaTareas.vue'),
-    },    {
-      path: '/registrar',
-      name: 'Registrar',
-      component: () => import('../modules/registro/view/RegistrarView.vue'),
-    },*/
+      path: '/submodulo',
+      name: 'SubModulo',
+      component: () => import('../views/SubModulo.vue'),
+    }
   ],
 })
 

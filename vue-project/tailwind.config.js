@@ -10,11 +10,12 @@ export default {
   },
   plugins: [],
   safelist: [
-    'bg-red-500',
-    'bg-blue-500',
+    'bg-red-500','bg-red-600','bg-red-700','bg-red-800','bg-red-900',
+    'bg-blue-500','bg-blue-600','bg-blue-700','bg-blue-800','bg-blue-900',
     'bg-green-500',
     'bg-yellow-500',
     'bg-purple-500',
+    'bg-indigo-500','bg-indigo-600','bg-indigo-700','bg-indigo-800','bg-indigo-900',
   ],
 }
 
