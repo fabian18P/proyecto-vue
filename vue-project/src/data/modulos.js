@@ -1,11 +1,12 @@
 export const modulos = {
     modulos: [
         {
+            id: "1",
             color: "red",
-            numero: "1",
             nombre: "Estructura de las plantas",
             subModulo: [
                 {
+                    id:"11",
                     color: "800",
                     nombre: "Células vegetales",
                     resumen: "Las células vegetales son eucariotas; es decir, células con núcleo verdadero. Tienen muchos componentes en común con la célula animal, pero la pared celular, la vacuola y los plastidios son componentes exclusivos de las células vegetales. <br> Para estudiar la célula vegetal, podemos dividirlas en tres secciones; le invitamos a seguir los enlaces para conocer más sobre ellas:",
@@ -19,6 +20,7 @@ export const modulos = {
                     ],
                     seccion: [
                         {
+                            id: "111",
                             nombre: "Pared Celular",
                             contenido: [
                                 {

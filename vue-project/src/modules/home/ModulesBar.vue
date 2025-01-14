@@ -32,7 +32,7 @@
       :key="index"
       class="mx-auto mb-2 mt-2 px-4 py-2 text-white rounded block hover:bg-gray-900 transition-colors duration-500"
       :class="`bg-${moduloSeleccionado.color}-700`"
-      @click="llamarSubModulo(subModulo)"
+      @click="navegarSubModulo(subModulo)"
     >
       {{ subModulo.nombre }}
     </button>
@@ -42,6 +42,18 @@
 <script setup>
   import { ref } from "vue";
   import { modulos } from "@/data/modulos";
+  import { useRouter } from 'vue-router';
+
+  const router = useRouter();
+  function navegarSubModulo(subModulo) {
+    if (moduloSeleccionado.value && subModulo) {
+      router.push({
+        path: `/submodulo/${moduloSeleccionado.value.id}/${subModulo.id}`
+      });
+    } else {
+      console.error("No se pudo navegar: moduloSeleccionado o subModulo está indefinido.");
+    }
+  }
 
   // Estado para controlar el módulo seleccionado
   const moduloSeleccionado = ref(null);
@@ -55,26 +67,26 @@
 </script>
 
 <style>
-img { width: 100px; height: 100px; }
-.carta {
-  text-align: center;
-  flex: auto;
-  transition: transform 0.2s ease;
-  z-index: 10;
-} .carta:hover {
-  transform: scale(1.02);
-}
+  img { width: 100px; height: 100px; }
+  .carta {
+    text-align: center;
+    flex: auto;
+    transition: transform 0.2s ease;
+    z-index: 10;
+  } .carta:hover {
+    transform: scale(1.02);
+  }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } .animation-fade-up {
+    animation: fadeInUp 0.5s ease-out forwards;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} .animation-fade-up {
-  animation: fadeInUp 0.5s ease-out forwards;
-}
 </style>
