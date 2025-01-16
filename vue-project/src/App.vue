@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-view></router-view> <!-- Donde se mostrarán las vistas según la ruta -->
+    <router-view></router-view>
   </div>
 </template>
 

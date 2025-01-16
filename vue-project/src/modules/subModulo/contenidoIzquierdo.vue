@@ -1,5 +1,4 @@
 <template>
-
   <p class="text-center pb-4">
     Contenido de la sección izquierda Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eum ex harum perspiciatis quasi animi excepturi velit facilis? Incidunt dolor harum quisquam necessitatibus amet cum enim consectetur atque sint reprehenderit!
   </p>

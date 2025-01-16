@@ -10,8 +10,13 @@ const router = createRouter({
     },
     {
       path: '/submodulo/:moduloId/:subModuloId',
-      name: 'SubModulo',
+      name: 'subModulo',
       component: () => import('../views/SubModulo.vue'),
+    },
+    {
+      path: '/contenido',
+      name: 'contenido',
+      component: () => import('../views/ContenidoModulo.vue'),
     }
   ],
 })
