@@ -12,7 +12,7 @@
     // Crear burbujas
     function createBubbles() {
       const container = document.body;
-      for (let i = 0; i < 15; i++) {
+      for (let i = 0; i < 11; i++) {
           const bubble = document.createElement('div');
           bubble.classList.add('bubble');
           bubble.style.left = `${Math.random() * 100}vw`;
