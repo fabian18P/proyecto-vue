@@ -1,12 +1,34 @@
 <template>
-  <HeaderComponet></HeaderComponet>
-  <div class="contenedor pt-20 h-auto w-auto text-justify">
-    <div class="section-left w-2/3 p-5 bg-amber-50">
-      <contenidoIzquierdo></contenidoIzquierdo>
+  <HeaderComponet />
+  <div
+    class="contenedor pt-20 h-auto w-auto text-justify flex flex-wrap 
+      lg:flex-nowrap
+      "
+    v-for="modulo in filteredModulos"
+    :key="modulo.id"
+  >
+    <!-- Sección izquierda -->
+    <div
+      class="section-left p-5 w-full order-2
+        lg:w-2/3 lg:order-1
+        "
+      :class="`bg-${modulo.color}-900`"
+    >
+      <div class="bg-gray-200 p-10">
+        <contenidoIzquierdo />
+      </div>
     </div>
-    <div class="section-right w-1/3 p-5 bg-red-600">
-      <contenidoDerecho></contenidoDerecho>
-      <btnSubModulo></btnSubModulo>
+
+    <!-- Sección derecha -->
+    <div
+      v-for="modulo in filteredModulos"
+      :key="modulo.id"
+      class="section-right p-5 bg-gray-200 w-full order-1 
+        lg:w-1/3 lg:order-2
+        "
+    >
+      <contenidoDerecho />
+      <btnSubModulo />
     </div>
   </div>
 </template>
@@ -15,20 +37,25 @@
   import HeaderComponet from "@/components/HeaderComponet.vue";
   import contenidoIzquierdo from "@/modules/subModulo/contenidoIzquierdo.vue";
   import contenidoDerecho from "@/modules/subModulo/contenidoDerecho.vue";
-  import btnSubModulo from "@/modules/subModulo/btnSubModulo.vue"
-  import { useRoute } from "vue-router";
+  import btnSubModulo from "@/modules/subModulo/btnSubModulo.vue";
+
   import { modulos } from "@/data/modulos";
+  // Función para obtener valores desde la URL actual
+  const pathSegments = window.location.pathname.split("/"); // Divide la URL por "/"
+  const mainId = pathSegments[2];
+  const subId = pathSegments[3];
 
-  const route = useRoute();
+  // Computed para filtrar
+  const filteredModulos = modulos.modulos
+    .filter((modulo) => modulo.id === mainId)
+    .map((modulo) => ({
+      ...modulo,
+      subModulo: modulo.subModulo.filter((sub) => sub.id === subId),
+    }));
+  </script>
 
-  // Capturar parámetros de la ruta
-  const moduloId = parseInt(route.params.moduloId, 10);
-  const subModuloId = parseInt(route.params.subModuloId, 10);
-</script>
-
-<style scoped>
-
-.contenedor {
-  display: flex; /* Para posicionar las secciones lado a lado */
-}
+  <style scoped>
+  .contenedor {
+    display: flex;
+  }
 </style>
