@@ -14,7 +14,7 @@ const router = createRouter({
       component: () => import('../views/SubModulo.vue'),
     },
     {
-      path: '/contenido',
+      path: '/contenido/:moduloId/:subModuloId/:seccionId',
       name: 'contenido',
       component: () => import('../views/ContenidoModulo.vue'),
     }

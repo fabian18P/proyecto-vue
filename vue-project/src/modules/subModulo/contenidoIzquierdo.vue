@@ -1,17 +1,49 @@
 <template>
-  <p class="text-center pb-4">
-    Contenido de la sección izquierda Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eum ex harum perspiciatis quasi animi excepturi velit facilis? Incidunt dolor harum quisquam necessitatibus amet cum enim consectetur atque sint reprehenderit!
-  </p>
-
-  <div class="flex flex-col items-center justify-center space-y-4">
-    <img
-      class="w-4/5"
-      src="https://bcw-media.s3.ap-northeast-1.amazonaws.com/text_to_image_v6_poster_01_f038887d26.jpg"
-      alt="Descripción de la imagen"
-    />
-
-    <p class="text-center text-xs">
-      Figura 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deserunt architecto, consectetur fugit porro dicta, distinctio iste rerum non laboriosam ea asperiores! Voluptas, consequuntur tenetur. Sunt nemo mollitia labore eaque!
-    </p>
+  <div
+    class="text-gray-800"
+    v-for="modulo in filteredModulos" 
+    :key="modulo.id"
+  >
+    <div
+      v-for="sub in modulo.subModulo"
+      :key="sub.id"
+    >
+      <div
+        v-for="descripcion in sub.descripcion"
+        :key="descripcion.id"
+      >
+        <p class="pb-4">{{ descripcion.texto }}</p>
+        <div
+          v-for="imagen in descripcion.imagen"
+          :key="imagen.id"
+        >
+          <div class="flex justify-center">
+            <img
+              class="w-1/2 rounded-3xl shadow-xl"
+              :src="imagen.url"
+              alt="Imagen de ejemplo"
+            />
+          </div>
+          <p class="text-center text-xs pt-3 pb-6">  {{ imagen.descripcion }} </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script setup>
+  import { modulos } from '@/data/modulos';
+
+  // Función para obtener valores desde la URL actual
+  const pathSegments = window.location.pathname.split("/"); // Divide la URL por "/"
+  const mainId = pathSegments[2]; 
+  const subId = pathSegments[3];  
+
+  // Computed para filtrar
+  const filteredModulos = modulos.modulos
+    .filter(modulo => modulo.id === mainId)
+    .map(modulo => ({
+        ...modulo,
+        subModulo: modulo.subModulo.filter(sub => sub.id === subId)
+    }));
+</script>
