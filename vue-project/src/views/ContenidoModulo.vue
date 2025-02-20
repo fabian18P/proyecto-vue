@@ -9,11 +9,11 @@
           <!-- Iteración de secciones filtradas -->
           <div v-for="seccion in sub.seccion" :key="seccion.id">
             <!-- Iteración de contenido -->
-            <div 
+            <div
               class="w-auto pb-16"
-              v-for="(contenido, index) in seccion.contenido" 
+              v-for="(contenido, index) in seccion.contenido"
               :key="index"
-              :class="[index % 2 === 0 ? 'bg-gray-200' : `bg-${modulo.color}-600 text-gray-100`]"
+              :class="[index % 2 === 0 ? 'bg-gray-200' : `bg-${modulo.color}-800 text-gray-100`]"
             >
               <div class="flex flex-wrap">
                 <!-- Sección izquierda -->
@@ -24,10 +24,10 @@
 
                 <!-- Sección derecha -->
                 <div class="w-full lg:w-1/2 p-5 flex flex-col items-center">
-                  <div 
+                  <div
                     class="mb-5 text-center"
-                    v-for="imagen in contenido.imagen" 
-                    :key="imagen.url" 
+                    v-for="imagen in contenido.imagen"
+                    :key="imagen.url"
                   >
                     <img
                       class="w-1/2 mx-auto rounded shadow-md"
@@ -36,7 +36,7 @@
                     />
                     <p
                       class="mt-2 text-sm pt-2"
-                      :class="[index % 2 === 0 ? 'text-gray-800' : `text-gray-100`]"  
+                      :class="[index % 2 === 0 ? 'text-gray-800' : `text-gray-100`]"
                     >{{ imagen.descripcion }}</p>
                   </div>
                 </div>

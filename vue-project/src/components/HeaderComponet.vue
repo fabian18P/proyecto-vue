@@ -1,23 +1,23 @@
 <template>
-  <header 
+  <header
     class="aaaa fixed inset-x-0 top-0 z-50 px-2 text-white opacity-99 shadow-lg"
     v-for="modulo in filteredModulos" :key="modulo.id"
   >
     <nav class="flex items-center justify-between p-2" aria-label="Global">
       <div class="flex">
         <span class="sr-only">{{ home.nombre }}</span>
-        <img 
-          class="h-16 w-auto cursor-pointer lg:h-16" 
-          :src="home.logo[0].url" 
-          alt="" 
+        <img
+          class="h-16 w-auto cursor-pointer lg:h-16"
+          :src="home.logo[0].url"
+          alt=""
           @click="paginaPrincipal()"
         >
       </div>
       <div class="barrido flex gap-x-4 pl-5">
-        <p class="text-lg font-black text-gray-200 hidden lg:block"> {{ modulo.nombre }} </p>
+        <p class="text-lg font-black text-gray-200 cursor-pointer hidden lg:block" @click="paginaPrincipal()"> {{ modulo.nombre }} </p>
         <p class="text-lg font-black text-gray-200 hidden lg:block"> > </p>
         <div v-for="sub in modulo.subModulo" :key="sub.id">
-          <p class="text-sm font-black text-gray-50 sm:text-lg"> {{ sub.nombre }} </p>
+          <p class="text-sm font-black text-gray-50 cursor-pointer sm:text-lg" @click="paginaSubmodulo(modulo.id, sub.id)"> {{ sub.nombre }} </p>
         </div>
       </div>
       <div class="flex flex-1 justify-end">
@@ -39,19 +39,19 @@
           @before-enter="onBeforeEnter"
           @after-leave="onAfterLeave"
         >
-          <div 
+          <div
             v-if="isModalOpen"
             class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center"
           >
-            <div 
+            <div
               class="fixed inset-0 bg-opacity-90 flex justify-center items-center text-gray-900"
               v-for="modulo in filteredModulos" :key="modulo.id"
-              :class="`bg-${modulo.color}-900`"  
+              :class="`bg-${modulo.color}-900`"
             >
               <div class="bg-gray-200 w-2/3 text-lg p-5 rounded-lg bg-opacity-150 shadow-lg relative max-h-[90vh] overflow-y-auto">
                 <ModalContenido/>
                 <!-- Botón para cerrar el modal -->
-                <button 
+                <button
                   class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
                   @click="isModalOpen = false"
                 >
@@ -73,17 +73,15 @@
   import { useRouter } from 'vue-router';
   import ModalContenido from "@/modules/contenidoModulo/modalContenido.vue";
 
-  // Función para obtener valores desde la URL actual
-  const pathSegments = window.location.pathname.split("/"); // Divide la URL por "/"
-  const mainId = pathSegments[2]; 
-  const subId = pathSegments[3];  
+  const pathSegments = ref(window.location.pathname.split("/"));
+  const mainId = ref(pathSegments.value[2]);
+  const subId = ref(pathSegments.value[3]);
 
-  // Computed para filtrar Modulos
   const filteredModulos = modulos.modulos
-  .filter(modulo => modulo.id === mainId)
+  .filter(modulo => modulo.id === mainId.value)
   .map(modulo => ({
       ...modulo,
-      subModulo: modulo.subModulo.filter(sub => sub.id === subId)
+      subModulo: modulo.subModulo.filter(sub => sub.id === subId.value)
   }));
 
   const router = useRouter();
@@ -93,7 +91,12 @@
     });
   }
 
-  // Activar o desacrtiva modal
+  function paginaSubmodulo(mainId, subId) {
+    router.push({
+      path: `/submodulo/${mainId}/${subId}`,
+    });
+  }
+
   const isModalOpen = ref(false);
 
   const onBeforeEnter = () => {

@@ -1,7 +1,8 @@
 <template>
   <!-- Contenedor principal con diseño flex -->
   <div class="contenedor-modulos pt-4 mb-20
-    sm:mb-0">
+    sm:mb-16
+    ">
     <!-- Contenedor de tarjetas -->
     <div class="tarjetas">
       <div

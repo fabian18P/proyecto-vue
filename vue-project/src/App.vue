@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="texto">
     <!-- Pantalla de carga -->
     <transition name="fade" mode="out-in">
       <div v-if="isLoading" class="loading-screen">
-        <h1 
+        <h1
           class="titulo text-5xl font-black flex items-center justify-center h-screen text-center text-amber-100
                 xl:text-9xl
           "
@@ -12,7 +12,7 @@
         </h1>
       </div>
     </transition>
-    
+
     <!-- Contenido principal -->
     <transition name="fade" mode="out-in">
       <router-view v-if="!isLoading" />
@@ -66,5 +66,9 @@
   }
   .fade-enter, .fade-leave-to {
     opacity: 0;
+  }
+
+  .texto {
+    white-space: pre-line;
   }
 </style>

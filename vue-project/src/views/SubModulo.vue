@@ -1,7 +1,7 @@
 <template>
   <HeaderComponet />
   <div
-    class="contenedor pt-20 h-auto w-auto text-justify flex flex-wrap 
+    class="contenedor pt-20 h-auto w-auto text-justify flex flex-wrap
       lg:flex-nowrap
       "
     v-for="modulo in filteredModulos"
@@ -15,7 +15,7 @@
       :class="`bg-${modulo.color}-900`"
     >
       <div class="bg-gray-200 p-10">
-        <contenidoIzquierdo />
+        <contenidoIzquierdo/>
       </div>
     </div>
 
@@ -23,7 +23,7 @@
     <div
       v-for="modulo in filteredModulos"
       :key="modulo.id"
-      class="section-right p-5 bg-gray-200 w-full order-1 
+      class="section-right p-5 bg-gray-200 w-full order-1
         lg:w-1/3 lg:order-2
         "
     >

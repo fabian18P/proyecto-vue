@@ -1,9 +1,9 @@
 <template>
     <!-- Iteración de módulos filtrados -->
-    <div 
+    <div
       class="text-white py-4 fixed bottom-0 left-0 w-full"
       v-for="modulo in filteredModulos" :key="modulo.id"
-      :class="`bg-${modulo.color}-800`"
+      :class="`bg-${modulo.color}-900`"
     >
       <div class="container mx-auto text-center">
       <!-- Iteración de submódulos filtrados -->
