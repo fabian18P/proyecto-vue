@@ -11,7 +11,7 @@ export const modulos = {
             {
               texto: "La siguiente gráfica resume las partes de la célula vegetal:",
               imagen: [
-                { url:"/public/assets/img/moduloUno/parte_celula.jpeg", descripcion: "Esquema de una célula vegetal con las principales estructuras celulares (Quiroga - Martín)" }
+                { url:"/assets/img/moduloUno/parte_celula.jpeg", descripcion: "Esquema de una célula vegetal con las principales estructuras celulares (Quiroga - Martín)" }
               ]
             }
           ],
