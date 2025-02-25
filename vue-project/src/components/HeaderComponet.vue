@@ -17,7 +17,7 @@
         <p class="text-lg font-black text-gray-200 cursor-pointer hidden lg:block" @click="paginaPrincipal()"> {{ modulo.nombre }} </p>
         <p class="text-lg font-black text-gray-200 hidden lg:block"> > </p>
         <div v-for="sub in modulo.subModulo" :key="sub.id">
-          <p class="text-sm font-black text-gray-50 cursor-pointer sm:text-lg" @click="paginaSubmodulo(modulo.id, sub.id)"> {{ sub.nombre }} </p>
+          <p class="text-lg mx-auto font-black text-gray-50 cursor-pointer sm:text-lg" @click="paginaSubmodulo(modulo.id, sub.id)"> {{ sub.nombre }} </p>
         </div>
       </div>
       <div class="flex flex-1 justify-end">
