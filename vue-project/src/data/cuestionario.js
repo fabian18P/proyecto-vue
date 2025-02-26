@@ -1,9 +1,10 @@
 export const cuestionario = {
     cuestionario: [
       // Modulo 01
+        // Modulo 01.1
       {
         id: "11",
-        descripcion: "Antes de estudiar las Células vegetales, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "las Células vegetales",
         pregunta:[
           {
             problema:"¿Cuáles organelas o estructuras celulares no están en la célula vegetal?",
@@ -116,9 +117,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 01.2
       {
         id: "12",
-        descripcion: "Antes de estudiar los Tejidos vegetales, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "los Tejidos vegetales",
         pregunta:[
           {
             problema:"¿Cuáles no es una característica del colénquima?",
@@ -146,9 +148,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 01.3
       {
         id: "13",
-        descripcion: "Antes de estudiar los Órganos de las plantas, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "los Órganos de las plantas",
         pregunta:[
           {
             problema:"¿Qué tipo de inflorescencia se muestra en la imagen?",
@@ -192,9 +195,10 @@ export const cuestionario = {
       },
 
       // Modulo 02
+        // Modulo 02.1
       {
         id: "21",
-        descripcion: "Antes de estudiar la Fotosíntesis, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "la Fotosíntesis",
         pregunta:[
           {
             problema:"Seleccione la afirmación incorrecta sobre la fase luminosa de la fotosíntesis.",
@@ -247,9 +251,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 02.2
       {
         id: "22",
-        descripcion: "Antes de estudiar la Respiración celular, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "la Respiración celular",
         pregunta:[
           {
             problema:"Durante esta etapa, en la matriz mitocondrial se descompone un compuesto denominado acetil coenzima-A y se libera:",
@@ -325,9 +330,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 02.3
       {
         id: "23",
-        descripcion: "Antes de estudiar las Relaciones hídricas, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "las Relaciones hídricas",
         pregunta:[
           {
             problema:"La capacidad de formar puentes de hidrógeno le confiere al agua una alta capacidad calorífica y un elevado calor de vaporización.",
@@ -369,9 +375,10 @@ export const cuestionario = {
       },
 
       // Modulo 03
+        // Modulo 03.1
       {
         id: "31",
-        descripcion: "Antes de estudiar la Clasificación y evolución, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "la Clasificación y evolución",
         pregunta:[
           {
             problema:"Las algas de la clase Charophyceae son los ancestros de las plantas.",
@@ -510,9 +517,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 03.2
       {
         id: "32",
-        descripcion: "Antes de estudiar la Biomas, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "los Biomas",
         pregunta:[
           {
             problema:"En este bioma los árboles poseen hojas coriáceas y corteza gruesa para resistir el fuego.",
@@ -566,9 +574,10 @@ export const cuestionario = {
           }
         ]
       },
+        // Modulo 03.3
       {
         id: "33",
-        descripcion: "Antes de estudiar el Ambiente y conservación, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.",
+        descripcion: "el Ambiente y conservación",
         pregunta:[
           {
             problema:"Seleccione la opción incorrecta con respecto a la situación representada en la fotografía.",

@@ -1,34 +1,36 @@
 <template>
-  <HeaderComponet />
-  <div
-    class="contenedor pt-20 h-auto w-auto text-justify flex flex-wrap
-      lg:flex-nowrap
-      "
-    v-for="modulo in filteredModulos"
-    :key="modulo.id"
-  >
-    <!-- Sección izquierda -->
+  <div class="contenido-modulo">
+    <HeaderComponet />
     <div
-      class="section-left p-5 w-full order-2
-        lg:w-2/3 lg:order-1
+      class="contenedor pt-20 h-auto w-auto text-justify flex flex-wrap
+        lg:flex-nowrap
         "
-      :class="`bg-${modulo.color}-900`"
-    >
-      <div class="bg-gray-200 p-10">
-        <contenidoIzquierdo/>
-      </div>
-    </div>
-
-    <!-- Sección derecha -->
-    <div
       v-for="modulo in filteredModulos"
       :key="modulo.id"
-      class="section-right p-5 bg-gray-200 w-full order-1
-        lg:w-1/3 lg:order-2
-        "
     >
-      <contenidoDerecho />
-      <btnSubModulo />
+      <!-- Sección izquierda -->
+      <div
+        class="section-left p-5 w-full order-2
+          lg:w-2/3 lg:order-1
+          "
+        :class="`bg-${modulo.color}-900`"
+      >
+        <div class="bg-gray-200 p-10">
+          <contenidoIzquierdo/>
+        </div>
+      </div>
+
+      <!-- Sección derecha -->
+      <div
+        v-for="modulo in filteredModulos"
+        :key="modulo.id"
+        class="section-right p-5 bg-gray-200 w-full order-1
+          lg:w-1/3 lg:order-2
+          "
+      >
+        <contenidoDerecho />
+        <btnSubModulo />
+      </div>
     </div>
   </div>
 </template>

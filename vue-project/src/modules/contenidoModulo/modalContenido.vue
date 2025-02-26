@@ -1,7 +1,7 @@
 <template>
-  <div v-for="modulo in filteredModulos" :key="modulo.id">
-    <h2 
-        class="text-4xl font-bold pt-4 mb-4 text-center" 
+  <div v-for="modulo in filteredModulos" :key="modulo.id" class="font-serif">
+    <h2
+        class="text-4xl pt-4 mb-4 text-center"
         v-for="sub in modulo.subModulo" :key="sub.id"
         :class="`text-${modulo.color}-900`"
     >
@@ -9,20 +9,20 @@
     </h2>
 
     <!-- Renderizar información del cuestionario -->
-    <p 
-        class="mb-4 pl-0 pr-0 text-justify
-            md:pl-16 md:pr-16 md:text-lg    
-        "
-        v-if="selectedCuestionario && !showResultadoFinal"   
+    <p
+      class="mb-4 pl-0 pr-0 text-justify
+          md:pl-16 md:pr-16 md:text-lg
+      "
+      v-if="selectedCuestionario && !showResultadoFinal"
     >
-        <strong> {{ selectedCuestionario.descripcion }} </strong>
+    Antes de estudiar <strong> {{ selectedCuestionario.descripcion }} </strong>, compruebe cuánto conoce de este tema. Al finalizar puede intentarlo de nuevo.
     </p>
 
     <!-- Mostrar pregunta o resultado -->
     <div v-if="!showResultadoFinal" >
         <div v-if="currentPregunta">
             <!-- Mostrar problema -->
-            <p 
+            <p
                 class="mb-0 pl-0 pr-0 text-base text-justify
                     md:pl-16 md:pr-16 md:text-lg md:mb-6
                 "
@@ -33,7 +33,7 @@
             <!-- Mostrar imágenes -->
             <div
                 class="mb-4"
-                v-for="(img, index) in currentPregunta.img" :key="index" 
+                v-for="(img, index) in currentPregunta.img" :key="index"
             >
                 <img
                     v-if="img.url !== ''"
@@ -45,7 +45,7 @@
             </div>
 
             <!-- Mostrar alternativas -->
-            <ul 
+            <ul
                 class="pl-0 pr-0 text-sm text-justify
                     md:pl-20 md:pr-20 md:text-base
                 "
@@ -53,7 +53,7 @@
                 <li
                     v-for="(alt, index) in currentPregunta.alternativa"
                     :key="index"
-                    class="mb-2"
+                    class="mb-2 pb-3"
                 >
                 <label>
                     <input
@@ -70,7 +70,7 @@
             <!-- Mostrar explicación -->
             <div
                 v-if="showExplicacion"
-                class="font-semibold mt-3 p-0 pl-2 pr-2 text-xs border-4 border-gray-400
+                class="font-semibold mt-3 p-0 pl-2 pt-4 pb-4 pr-2 text-xs border-4 border-gray-400
                     md:mt-4 md:p-2 md:pl-10 md:pr-10 md:text-base
                 "
             >

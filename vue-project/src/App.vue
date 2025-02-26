@@ -13,10 +13,12 @@
       </div>
     </transition>
 
-    <!-- Contenido principal -->
-    <transition name="fade" mode="out-in">
-      <router-view v-if="!isLoading" />
-    </transition>
+    <!-- Contenido principal con la solución correcta -->
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" v-if="!isLoading" />
+      </transition>
+    </router-view>
   </div>
 </template>
 

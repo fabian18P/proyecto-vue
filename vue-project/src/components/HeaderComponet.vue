@@ -1,60 +1,54 @@
 <template>
-  <header
-    class="aaaa fixed inset-x-0 top-0 z-50 px-2 text-white opacity-99 shadow-lg"
-    v-for="modulo in filteredModulos" :key="modulo.id"
-  >
+  <header class="aaaa fixed inset-x-0 top-0 z-50 px-2 text-white opacity-99 shadow-lg">
     <nav class="flex items-center justify-between p-2" aria-label="Global">
+      <!-- Logo y navegación a página principal -->
       <div class="flex">
         <span class="sr-only">{{ home.nombre }}</span>
         <img
           class="h-16 w-auto cursor-pointer lg:h-16"
-          :src="home.logo[0].url"
-          alt=""
+          :src="home.logo[0]?.url || ''"
+          alt="Logo"
           @click="paginaPrincipal()"
         >
       </div>
-      <div class="barrido flex gap-x-4 pl-5">
-        <p class="text-lg font-black text-gray-200 cursor-pointer hidden lg:block" @click="paginaPrincipal()"> {{ modulo.nombre }} </p>
-        <p class="text-lg font-black text-gray-200 hidden lg:block"> > </p>
-        <div v-for="sub in modulo.subModulo" :key="sub.id">
-          <p class="text-lg mx-auto font-black text-gray-50 cursor-pointer sm:text-lg" @click="paginaSubmodulo(modulo.id, sub.id)"> {{ sub.nombre }} </p>
-        </div>
+
+      <!-- Breadcrumb de navegación -->
+      <div v-if="filteredModulos.length > 0" class="barrido flex gap-x-4 pl-5">
+        <template v-for="modulo in filteredModulos" :key="modulo.id">
+          <p class="text-lg font-black text-gray-200 cursor-pointer hidden lg:block" @click="paginaPrincipal()">
+            {{ modulo.nombre }}
+          </p>
+          <p class="text-lg font-black text-gray-200 hidden lg:block"> > </p>
+          <template v-for="sub in modulo.subModulo" :key="sub.id">
+            <p class="text-lg mx-auto font-black text-gray-50 cursor-pointer sm:text-lg" @click="paginaSubmodulo(modulo.id, sub.id)">
+              {{ sub.nombre }}
+            </p>
+          </template>
+        </template>
       </div>
+
+      <!-- Botón para abrir el modal -->
       <div class="flex flex-1 justify-end">
         <button
+          v-if="filteredModulos.length > 0"
           class="px-2 py-2 text-md shadow-md rounded transition-colors duration-500 md:px-4 md:text-lg"
           @click="isModalOpen = true"
-          :class="[
-            `bg-${modulo.color}-900`,
-            'text-white',
-            'hover:bg-gray-100 hover:text-gray-800'
-          ]"
+          :class="`bg-${filteredModulos[0].color || 'gray'}-900 text-white hover:bg-gray-100 hover:text-gray-800`"
         >
           Cuestionario
         </button>
 
-        <transition
-          name="modal-fade"
-          appear
-          @before-enter="onBeforeEnter"
-          @after-leave="onAfterLeave"
-        >
-          <div
-            v-if="isModalOpen"
-            class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center"
-          >
+        <!-- Modal de cuestionario -->
+        <transition name="modal-fade" appear @before-enter="onBeforeEnter" @after-leave="onAfterLeave">
+          <div v-if="isModalOpen" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
             <div
               class="fixed inset-0 bg-opacity-90 flex justify-center items-center text-gray-900"
-              v-for="modulo in filteredModulos" :key="modulo.id"
-              :class="`bg-${modulo.color}-900`"
+              :class="`bg-${filteredModulos[0]?.color || 'gray'}-900`"
             >
               <div class="bg-gray-200 w-2/3 text-lg p-5 rounded-lg bg-opacity-150 shadow-lg relative max-h-[90vh] overflow-y-auto">
                 <ModalContenido/>
                 <!-- Botón para cerrar el modal -->
-                <button
-                  class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-                  @click="isModalOpen = false"
-                >
+                <button class="absolute top-2 right-2 text-gray-500 hover:text-gray-700" @click="isModalOpen = false">
                   ✖
                 </button>
               </div>

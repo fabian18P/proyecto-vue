@@ -1,43 +1,47 @@
 <template>
-  <HeaderComponet />
-  <div class="contenedor pt-20 h-auto w-auto text-justify">
-    <div class="section-left w-full bg-amber-50">
-      <!-- Iteración de módulos filtrados -->
-      <div v-for="modulo in filteredModulos" :key="modulo.id">
-        <!-- Iteración de submódulos filtrados -->
-        <div v-for="sub in modulo.subModulo" :key="sub.id">
-          <!-- Iteración de secciones filtradas -->
-          <div v-for="seccion in sub.seccion" :key="seccion.id">
-            <!-- Iteración de contenido -->
-            <div
-              class="w-auto pb-16"
-              v-for="(contenido, index) in seccion.contenido"
-              :key="index"
-              :class="[index % 2 === 0 ? 'bg-gray-200' : `bg-${modulo.color}-800 text-gray-100`]"
-            >
-              <div class="flex flex-wrap">
-                <!-- Sección izquierda -->
-                <div class="w-full lg:w-1/2 p-5 text-lg">
-                  <p class="font-bold text-5xl pb-4">{{ contenido.subTitulo }}</p>
-                  <p v-html="contenido.descripcion"></p>
-                </div>
+  <div class="contenido-modulo">
+    <HeaderComponet />
+    <div class="contenedor pt-20 h-auto w-auto">
+      <div class="section-left w-full bg-amber-50">
+        <!-- Iteración de módulos filtrados -->
+        <div v-for="modulo in filteredModulos" :key="modulo.id">
+          <!-- Iteración de submódulos filtrados -->
+          <div v-for="sub in modulo.subModulo" :key="sub.id">
+            <!-- Iteración de secciones filtradas -->
+            <div v-for="seccion in sub.seccion" :key="seccion.id">
+              <!-- Iteración de contenido -->
+              <div
+                class="w-auto pb-16"
+                v-for="(contenido, index) in seccion.contenido"
+                :key="index"
+                :class="[index % 2 === 0 ? 'bg-gray-200' : `bg-${modulo.color}-800 text-gray-100`]"
+              >
+                <div class="flex flex-wrap">
+                  <!-- Sección izquierda -->
+                  <div class="w-full lg:w-1/2 p-5 text-lg">
+                    <p class="font-bold text-5xl pb-4">{{ contenido.subTitulo }}</p>
+                    <p v-html="contenido.descripcion"></p>
+                  </div>
 
-                <!-- Sección derecha -->
-                <div class="w-full lg:w-1/2 p-5 flex flex-col items-center">
-                  <div
-                    class="mb-5 text-center"
-                    v-for="imagen in contenido.imagen"
-                    :key="imagen.url"
-                  >
-                    <img
-                      class="w-1/2 mx-auto rounded shadow-md"
-                      :src="imagen.url"
-                      alt="Imagen de ejemplo"
-                    />
-                    <p
-                      class="mt-2 text-sm pt-2"
-                      :class="[index % 2 === 0 ? 'text-gray-800' : `text-gray-100`]"
-                    >{{ imagen.descripcion }}</p>
+                  <!-- Sección derecha -->
+                  <div class="w-full lg:w-1/2 flex flex-col justify-center items-center">
+                    <div
+                      class="mb-5 text-center p-3 flex flex-col items-center justify-center"
+                      v-for="imagen in contenido.imagen"
+                      :key="imagen.url"
+                    >
+                      <img
+                        class="w-[400px] rounded shadow-md object-cover"
+                        :src="imagen.url"
+                        alt="Imagen de ejemplo"
+                      />
+                      <p
+                        class="mt-2 text-sm pt-2 px-4 lg:px-24 text-center"
+                        :class="[index % 2 === 0 ? 'text-gray-800' : 'text-gray-100']"
+                      >
+                        {{ imagen.descripcion }}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -46,8 +50,8 @@
         </div>
       </div>
     </div>
+    <FooterContenido />
   </div>
-  <FooterContenido />
 </template>
 
 <script setup>
