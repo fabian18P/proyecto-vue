@@ -55,15 +55,32 @@
                     :key="index"
                     class="mb-2 pb-3"
                 >
-                <label>
+                  <label class="flex items-center space-x-4 cursor-pointer">
                     <input
-                        type="radio"
-                        :value="alt"
-                        v-model="selectedAlternativa"
-                        class="mr-2 appearance-none w-4 h-4 bg-gray-500 rounded-full shadow-md checked:bg-green-500 focus:ring-2 focus:ring-green-300"
+                      type="radio"
+                      :value="alt"
+                      v-model="selectedAlternativa"
+                      class="peer hidden"
+                      :disabled="showExplicacion"
                     />
-                    {{ alt.respuesta }}
-                </label>
+                    <span
+                      class="w-4 h-4 rounded-full shadow-md border-2 transition-all duration-300 peer-checked:bg-gray-700 peer-checked:border-gray-500"
+                      :class="{
+                        'border-gray-500 bg-gray-500': !showExplicacion && selectedAlternativa !== alt, // Color por defecto si no está seleccionado
+                        'border-red-500 bg-red-500': showExplicacion && !alt.validez && alt === selectedAlternativa, // Incorrecto
+                        'border-green-500 bg-green-500': showExplicacion && alt.validez // Correcto
+                      }"
+                    ></span>
+                    <span
+                      class="flex-1"
+                      :class="{
+                        'text-red-500': showExplicacion && !alt.validez && alt === selectedAlternativa, // Texto rojo si es incorrecto
+                        'text-green-500': showExplicacion && alt.validez // Texto verde si es correcto
+                      }"
+                    >
+                      {{ alt.respuesta }}
+                    </span>
+                  </label>
                 </li>
             </ul>
 
@@ -120,12 +137,10 @@
 
     <!-- Mostrar resultado final -->
     <div v-else class="text-center">
-        <p class="mb-4 text-center"> {{ selectedCuestionario.descripcion }} </p>
         <h3 class="text-xl font-bold mb-4">Resultado Final</h3>
-        <p class="text-3xl font-bold text-green-500">{{ puntaje }}/{{ selectedCuestionario.pregunta.length }}</p>
+        <p class="text-7xl font-bold text-green-500 pb-10">{{ puntaje }}/{{ selectedCuestionario.pregunta.length }}</p>
     </div>
-    </div>
-
+  </div>
 </template>
 
 <script setup>

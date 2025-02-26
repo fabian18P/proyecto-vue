@@ -2,7 +2,7 @@ export const modulos = {
   modulos: [
     // MODULO 1
     {
-      id: "1", color: "red", nombre: "Estructura de las plantas",
+      id: "1", color: "red", nombre: "Estructura de las plantas", img: "static/moduloUno/modulo1.png",
       subModulo: [
         {
           id:"11", nombre: "Células vegetales",
@@ -667,7 +667,7 @@ export const modulos = {
 
     // MODULO 2
     {
-      id: "2", color: "blue", nombre: "Fisiología Vegetal",
+      id: "2", color: "blue", nombre: "Fisiología Vegetal", img: "static/moduloDos/modulo2.png",
       subModulo: [
         {
           id:"21", nombre: "Fotosíntesis",
@@ -985,7 +985,7 @@ export const modulos = {
 
     // MODULO 3
     {
-      id: "3", color: "indigo", nombre: "Diversidad y conservación",
+      id: "3", color: "indigo", nombre: "Diversidad y conservación", img: "static/moduloTres/modulo3.png",
       subModulo: [
         {
           id:"31", nombre: "Clasificación y evolución",
@@ -1004,9 +1004,9 @@ export const modulos = {
                     ◉ Tracheophyta: helechos, pinos, plantas con flores.`,
           descripcion : [
             {
-              texto: ``,
+              texto: `En la siguiente imagen se ve la clasificación de la taxonomía de las plantas.`,
               imagen: [
-                { url:"", descripcion: "" }
+                { url:"https://files.passeidireto.com/072e9766-c1d3-4096-8ded-7e3fe7fd3591/bg1.png", descripcion: "Jerarquía de la taxonomía." }
               ]
             }
           ],
@@ -1017,32 +1017,32 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"División Bryophyta",
-                  descripcion: `Las briófitas son plantas pequeñas y primitivas comunes en lugares muy húmedos. No tienen tejidos vasculares (xilema, floema) ni producen semillas. La fase dominante es el gametofito (fase haploide que contiene gametos). El esporofito es dependiente del gametofito y produce esporas. Existen tres clases en la división Bryophyta: Hepaticopsida, Anthocerotopsida y Bryopsida.`,
+                  descripcion: `Las briófitas son plantas pequeñas y primitivas comunes en lugares muy húmedos. No tienen tejidos vasculares (xilema, floema) ni producen semillas. La fase dominante es el gametofito (fase haploide que contiene gametos). El esporofito es dependiente del gametofito y produce esporas. Existen tres clases en la división Bryophyta: Hepaticopsida, Anthocerotopsida y Bryopsida (ver figura 1).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://cdn0.ecologiaverde.com/es/posts/9/3/9/que_son_las_plantas_briofitas_definicion_1939_0_600.jpg", descripcion: "Figura 1. Planta perteneciente a la briófitas."}
                   ]
                 },
                 {
                   subTitulo:"Hepaticopsida",
-                  descripcion: `En la clase Hepaticopsida se clasifican las plantas conocidas como hepáticas. Su cuerpo se denomina talo y tiene forma de abanico. Tienen células con cuerpos oleosos que contienen aceites y sustancias aromáticas (ver figura 1).`,
+                  descripcion: `En la clase Hepaticopsida se clasifican las plantas conocidas como hepáticas. Su cuerpo se denomina talo y tiene forma de abanico. Tienen células con cuerpos oleosos que contienen aceites y sustancias aromáticas (ver figura 2).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lunularia_cruciata.jpg/1200px-Lunularia_cruciata.jpg", descripcion: "Figura 2. Hepática del género Marchantia."}
                   ]
                 },
                 {
                   subTitulo:"Anthocerotopsida",
-                  descripcion: `En esta clase están los antoceros que, por su forma, también se conocen como hepáticas con cuernos. Muchas especies de antoceros cuentan con cavidades mucilaginosas ocupadas por colonias de cianobacterias del género Nostoc (ver figura 2).`,
+                  descripcion: `En esta clase están los antoceros que, por su forma, también se conocen como hepáticas con cuernos. Muchas especies de antoceros cuentan con cavidades mucilaginosas ocupadas por colonias de cianobacterias del género Nostoc (ver figura 3).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://inaturalist-open-data.s3.amazonaws.com/photos/331616234/original.jpeg", descripcion: "Figura 3. Anthoceros del cianobacterias del género Nostoc."}
                   ]
                 },
                 {
                   subTitulo:"Bryopsida",
-                  descripcion: `En Costa Rica, arriba de los 1700 m s. n. m., crece el musgo Sphagnum, propio de los pantanos de altura denominados turberas (ver figura 3).
+                  descripcion: `En Costa Rica, arriba de los 1700 m s. n. m., crece el musgo Sphagnum, propio de los pantanos de altura denominados turberas (ver figura 4).
 
                                 El siguiente video resume las principales características de los musgos y las hepáticas, las briófitas más comunes.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://inaturalist-open-data.s3.amazonaws.com/photos/32634490/original.jpg", descripcion: "Figura 4. Clase de Bryopsida."}
                   ]
                 }
               ]
@@ -1054,74 +1054,74 @@ export const modulos = {
                   subTitulo:"División Tracheophyta",
                   descripcion: `Las traqueófitas son plantas de mayor tamaño que las briófitas y cuentan con tejido vascular (xilema y floema). Su fase dominante es el esporofito (fase diploide que contiene esporas). El gametofito produce las células sexuales haploides y es dependiente del esporofito.
 
-                                La división Tracheophyta se separa en las clases: Lycopodiopsida, Psilotopsida, Equisetopsida, Polypodiopsida, Cycadopsida, Coniferopsida, Gingkopsida, Gnetopsida y Angiospermopsida.`,
+                                La división Tracheophyta se separa en las clases: Lycopodiopsida, Psilotopsida, Equisetopsida, Polypodiopsida, Cycadopsida, Coniferopsida, Gingkopsida, Gnetopsida y Angiospermopsida (ver figura 1).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/0/0d/Psilotum.jpg", descripcion: "Figura 1. Planta perteneciente a la familia Tracheophyta."}
                   ]
                 },
                 {
                   subTitulo:"Lycopodiopsida",
-                  descripcion: `Las pertenecientes a esta clase son plantas como los licopodios o los ciprecillos y las selaginelas. Por lo general, se les encuentra en zonas muy húmedas, especialmente arriba de los 1500 m s. n. m. En la imagen, se aprecian plantas de la especie Lycopodium clavatum con estróbilos (estructuras con forma de cono y que cuentan con hojas reproductivas que contienen esporas) (ver figura 4).`,
+                  descripcion: `Las pertenecientes a esta clase son plantas como los licopodios o los ciprecillos y las selaginelas. Por lo general, se les encuentra en zonas muy húmedas, especialmente arriba de los 1500 m s. n. m. En la imagen, se aprecian plantas de la especie Lycopodium clavatum con estróbilos (estructuras con forma de cono y que cuentan con hojas reproductivas que contienen esporas) (ver figura 2).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lycopodium_annotinum_04.jpg/220px-Lycopodium_annotinum_04.jpg", descripcion: "Figura 2. Lycopodium clavatum."}
                   ]
                 },
                 {
                   subTitulo:"Psilotopsida",
-                  descripcion: `En esta clase, se encuentra la grama de playa Psilotum nudum. Se puede observar en Cahuita, en la provincia de Limón. En los tallos, se observan protuberancias; cada una de ellas corresponde a la fusión de tres esporangios. Dentro de ellos, hay esporas alargadas. Estas plantas poseen un pequeño tallo subterráneo llamado rizoma (ver figura 5).`,
+                  descripcion: `En esta clase, se encuentra la grama de playa Psilotum nudum. Se puede observar en Cahuita, en la provincia de Limón. En los tallos, se observan protuberancias; cada una de ellas corresponde a la fusión de tres esporangios. Dentro de ellos, hay esporas alargadas. Estas plantas poseen un pequeño tallo subterráneo llamado rizoma (ver figura 3).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://www.picturethisai.com/wiki-image/1080/153723489520451623.jpeg", descripcion: "Figura 3. Psilotum nudum."}
                   ]
                 },
                 {
                   subTitulo:"Equisetopsida",
-                  descripcion: `Esta clase se integra por las colas de caballo, Equisetum. Se caracterizan por sus tallos ramificados de forma verticilada, con células de paredes gruesas y ricas en silicatos. Los estróbilos se encuentran en el extremo de las ramas fértiles (ver figura 6).
+                  descripcion: `Esta clase se integra por las colas de caballo, Equisetum. Se caracterizan por sus tallos ramificados de forma verticilada, con células de paredes gruesas y ricas en silicatos. Los estróbilos se encuentran en el extremo de las ramas fértiles.
 
-                                Las esporas de Equisetum cuentan con eláteres. Estas son estructuras alargadas que contribuyen a su dispersión por medio del viento (ver figura 7).`,
+                                Las esporas de Equisetum cuentan con eláteres. Estas son estructuras alargadas que contribuyen a su dispersión por medio del viento (ver figura 4).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dDacstIiTEn5Hl8sDfZPrusL7WDZFHk7Ew&s", descripcion: "Figura 4. Estróbilo de Equisetum sp."}
                   ]
                 },
                 {
                   subTitulo:"Polypodiopsida",
-                  descripcion: `En esta oportunidad, se trata de helechos. En Costa Rica, existen más de 200 especies. Sus hojas se denominan frondas y, en su borde o envés, se encuentran agrupaciones de esporangios denominadas soros (ver figura 8).`,
+                  descripcion: `En esta oportunidad, se trata de helechos. En Costa Rica, existen más de 200 especies. Sus hojas se denominan frondas y, en su borde o envés, se encuentran agrupaciones de esporangios denominadas soros (ver figura 5).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://www.taxateca.com/images/dominioeukaryota/Reinoplantae/filomonilophyta/clasepolypodiopsida/fern.jpg", descripcion: "Figura 5. Helechos de Polypodiopsida."}
                   ]
                 },
                 {
                   subTitulo:"Cycadopsida",
-                  descripcion: `En esta clase, se encuentran las cicas y las zamias. Las plantas de este grupo cuentan con semillas carnosas cubiertas por conjuntos de hojas especializadas o conos. Se parecen a palmeras pequeñas, con hojas divididas y semillas grandes, por lo general, rojizas. Son dioicas, es decir, las plantas femeninas están separadas de las masculinas (ver figura 9).`,
+                  descripcion: `En esta clase, se encuentran las cicas y las zamias. Las plantas de este grupo cuentan con semillas carnosas cubiertas por conjuntos de hojas especializadas o conos. Se parecen a palmeras pequeñas, con hojas divididas y semillas grandes, por lo general, rojizas. Son dioicas, es decir, las plantas femeninas están separadas de las masculinas (ver figura 6).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-3FpoSqQ7UXfehHYKj4P2UIyu6wbGZ-k9g&s", descripcion: "Figura 6. Helecho de Cycadopsida."}
                   ]
                 },
                 {
                   subTitulo:"Coniferopsida",
                   descripcion: `También se llaman gimnospermas o plantas con semillas desnudas. Son las coníferas, es decir, pinos, cipreses, araucarias. En algunos casos son dioicas, pero también, hay plantas monoicas (con los órganos masculinos y femeninos en un mismo individuo).
 
-                                Las semillas están expuestas y se desarrollan en la superficie de escamas u hojas modificadas que forman un estróbilo. Los estróbilos se denominan conos o piñas (ver figura 10).`,
+                                Las semillas están expuestas y se desarrollan en la superficie de escamas u hojas modificadas que forman un estróbilo. Los estróbilos se denominan conos o piñas (ver figura 7).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Spar_naalden.jpg/266px-Spar_naalden.jpg", descripcion: "Figura 7. Semilla de Coniferopsida."}
                   ]
                 },
                 {
                   subTitulo:"Cycadopsida",
-                  descripcion: `No está representada en Costa Rica. Abundaba en la era Mesozoica (hace 248-65 millones de años). Únicamente sobrevive una especie: Gingko biloba, caracterizada por las hojas con forma de abanico y un corte en el medio (bilobadas) (ver figura 11).`,
+                  descripcion: `No está representada en Costa Rica. Abundaba en la era Mesozoica (hace 248-65 millones de años). Únicamente sobrevive una especie: Gingko biloba, caracterizada por las hojas con forma de abanico y un corte en el medio (bilobadas) (ver figura 8).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Cycas_inflorescence.jpg", descripcion: "Figura 8. Familia Cycadopsida."}
                   ]
                 },
                 {
                   subTitulo:"Gnetopsida",
-                  descripcion: `Plantas con semillas desnudas (no envueltas por un fruto). En Costa Rica, está solo Gnetum leyboldii, el bejuco de dosel. Esta es una trepadora que alcanza el dosel en bosques de zonas bajas y húmedas. Los estróbilos masculinos de las plantas de esta clase se encuentran agrupados, similares a las flores (ver figura 12).`,
+                  descripcion: `Plantas con semillas desnudas (no envueltas por un fruto). En Costa Rica, está solo Gnetum leyboldii, el bejuco de dosel. Esta es una trepadora que alcanza el dosel en bosques de zonas bajas y húmedas. Los estróbilos masculinos de las plantas de esta clase se encuentran agrupados, similares a las flores (ver figura 9).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjpuzAvO-eSsarnbmwaWnjo8jwY3ht9NvdAw&s", descripcion: "Figura 9. Canutillos de la familia Gnetopsida."}
                   ]
                 },
                 {
                   subTitulo:"Angiospermopsida",
-                  descripcion: `Las angiospermas son plantas con flores y semillas contenidas en frutos verdaderos. En este grupo, los esporangios están agregados y asociados con hojas especializadas para formar las flores con estambres y carpelos.
+                  descripcion: `Las angiospermas son plantas con flores y semillas contenidas en frutos verdaderos. En este grupo, los esporangios están agregados y asociados con hojas especializadas para formar las flores con estambres y carpelos (ver figura 10).
 
                                 Este es el grupo dominante del reino Plantae, ya que alrededor de 90% de las plantas existentes son angiospermas. Existen aproximadamente 260 000 especies de plantas con flores distribuidas en unas quinientas familias.
 
@@ -1135,9 +1135,10 @@ export const modulos = {
                                 ◉ <strong>Asteraceae.</strong> Plantas dicotiledóneas con flores compuestas como la Santa Lucía, la manzanilla y la margarita.
                                 ◉ <strong>Fabaceae.</strong> Dicotiledóneas con frutos que son una legumbre, como el frijol, el tamarindo, el árbol de Guanacaste, el poró, la dormilona y el malinche.
 
-                                En el video 2, se resumen las principales diferencias entre monocotiledóneas y dicotiledóneas.`,
+                                En la figura 11, se resumen las principales diferencias entre monocotiledóneas y dicotiledóneas.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                    {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThUlfZboz1k3HDWh-J2Pkp6c6kuHoHszBQHQ&s", descripcion: "Figura 10. Ilustración de flores pertenecientes a la familia Angiospermopsida."},
+                    {url:"https://us.123rf.com/450wm/normaals/normaals2004/normaals200400002/143663474-ilustraci%C3%B3n-de-vector-de-monocotiled%C3%B3neas-y-dicotiled%C3%B3neas-esquema-de-divisi%C3%B3n-de-comparaci%C3%B3n-de.jpg", descripcion: "Figura 11. Ilustración de la diferencia entre monocotiledóneas y dicotiledóneas."}
                   ]
                 }
               ]
@@ -1147,9 +1148,9 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"Historia evolutiva de las plantas",
-                  descripcion: `Las primeras plantas aparecieron hace cientos de millones de años y tuvieron un origen acuático.`,
+                  descripcion: `Las primeras plantas aparecieron hace cientos de millones de años y tuvieron un origen acuático (ver figura 1).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://agencia.unq.edu.ar/wp-content/uploads/2022/08/improntas-de-hojas-dest1.jpg", descripcion: "Figura 1. Resto fosil de plata acuática."}
                   ]
                 },
                 {
@@ -1160,18 +1161,19 @@ export const modulos = {
 
                                 En los comienzos del periodo Devónico (400 millones de años), ya estaban plantas de las clases Lycopodiopsida, Psilotopsida, Equisetopsida y Pteridopsida (Polypodiopsida). Todas estas tienen especies presentes hoy día. La generación dominante es el esporofito diploide. Cuentan con traqueidas, frondas y rizomas.
 
-                                A mediados del Devónico, hace unos 380 millones de años, aparecieron plantas de las clases Aneurophytopsida y Archaeopteridopsida, ya extintas. Estas tenían tallos leñosos y se consideran precursores de las plantas con semillas (ver figura 13).
+                                A mediados del Devónico, hace unos 380 millones de años, aparecieron plantas de las clases Aneurophytopsida y Archaeopteridopsida, ya extintas. Estas tenían tallos leñosos y se consideran precursores de las plantas con semillas (ver figura 2).
 
-                                A finales del Devónico (hace 360 millones de años), surgen las plantas conocidas como “helechos con semillas del Paleozoico”, de las clases Lyginopteridopsida, Medullosopsida y Callistophytopsida. En estas plantas, se distinguían estructuras como semillas, glándulas secretoras y nucela (parte interna del primordio seminal) (ver figura 14).
+                                A finales del Devónico (hace 360 millones de años), surgen las plantas conocidas como “helechos con semillas del Paleozoico”, de las clases Lyginopteridopsida, Medullosopsida y Callistophytopsida. En estas plantas, se distinguían estructuras como semillas, glándulas secretoras y nucela (parte interna del primordio seminal) (ver figura 3).
 
                                 En el periodo Carbonífero (hace unos 355 millones de años), se origina la selva húmeda y caliente. Aparecen representantes de las clases Cycadopsida y Coniferopsida. También, surge la clase Gingkopsida, con solo un representante vivo en la actualidad (la especie Gingko biloba). Ya se ven características como la cubierta seminal pétrea o carnosa y la movilización de las reservas alimenticias de las semillas.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpvBWEogtRp2yfwJSgl7ID8g2_3BArYgf1JFL5aoCJY-ZLXWnOJS1uubpU2jQbBNsSCQ&usqp=CAU", descripcion: "Figura 2. Fósil de Archaeopteris sp."},
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/4/40/Neuropteris_flexuosa_fossil_plant_%28Mazon_Creek_Lagerstatte%2C_Francis_Creek_Shale%2C_Middle_Pennsylvanian%3B_coal_mine_dump_pile_near_Essex%2C_northern_Illinois%2C_USA%29_%2814910119354%29.jpg", descripcion: "Figura 3. Neuropteris, del orden Medullosales."}
                   ]
                 },
                 {
                   subTitulo:"Plantas que aparecieron en la era Mesozoica",
-                  descripcion: `En la era Mesozoica, a mediados del periodo Triásico (hace unos 230 millones de años), surgen las coníferas que son ancestros de los actuales pinos y cipreses. Hay presencia de conductos resiníferos y semillas ariladas o aladas.
+                  descripcion: `En la era Mesozoica, a mediados del periodo Triásico (hace unos 230 millones de años), surgen las coníferas que son ancestros de los actuales pinos y cipreses. Hay presencia de conductos resiníferos y semillas ariladas o aladas (ver figura 4).
 
                                 También, aparecen los “helechos con semillas del Mesozoico”, pertenecientes a las clases Coristospermopsida, Peltaspermopsida y Glossopteridopsida, todos extintos.
 
@@ -1179,7 +1181,7 @@ export const modulos = {
 
                                 Los primeros fósiles de la clase Angiospermopsida datan de principios del periodo Cretácico (hace unos 135 millones de años), antes del desarrollo de los mamíferos. En esta clase, surge el carpelo (ovario con primordios seminales, estilo y estigma), que dio origen a los frutos. En la actualidad, es la clase con más especies representadas en el planeta. Se cree que las primeras plantas angiospermas fueron acuáticas.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWNchxWfLBBSNYjznm-d7lAp2BwqQtakULA&s", descripcion: "Figura 4. Fósil de semilla aladas."}
                   ]
                 }
               ]
@@ -1191,9 +1193,9 @@ export const modulos = {
           resumen: `Los biomas son regiones del planeta que tienen flora, fauna y clima similares. Existen biomas terrestres y acuáticos.`,
           descripcion : [
             {
-              texto: ``,
+              texto: `En la siguiente imagen se puede ver los diferenten biomas más destacados del mundo:`,
               imagen: [
-                { url:"", descripcion: "" }
+                { url:"https://ecosiglos.com/wp-content/uploads/2019/08/tipos-de-biomas.jpg", descripcion: "Fotografía de grupos de biomas" }
               ]
             }
           ],
@@ -1204,9 +1206,9 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"Biomas terrestres",
-                  descripcion: `Muchas de las características de la vegetación de los biomas terrestres son adaptaciones que tienen relación con la forma en que las plantas obtienen, retienen y utilizan el agua y los minerales del sustrato donde crecen. Existen diversos tipos de biomas terrestres, como el boque tropical seco, el bosque tropical lluvioso, la sabana, el desierto, la taiga y la tundra.`,
+                  descripcion: `Muchas de las características de la vegetación de los biomas terrestres son adaptaciones que tienen relación con la forma en que las plantas obtienen, retienen y utilizan el agua y los minerales del sustrato donde crecen. Existen diversos tipos de biomas terrestres, como el boque tropical seco, el bosque tropical lluvioso, la sabana, el desierto, la taiga y la tundra (ver figura 1).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/J65EENCQMVES3HTLBFG5QEYVLU.jpg", descripcion: "Figura 1. Los 4 mayores biomas terrestres."}
                   ]
                 },
                 {
@@ -1215,9 +1217,9 @@ export const modulos = {
 
                                 En la vegetación predominan los árboles deciduos que pierden las hojas en los meses más secos. Esta estrategia les permite conservar agua en época de escasez. Sus raíces son profundas, lo cual facilita la captación de agua subterránea.
 
-                                Los claros de bosque formados por la caída de las hojas posibilitan el crecimiento de plantas de sotobosque. En las zonas de mayor humedad del bosque seco tropical, se observan plantas siempreverdes (ver figura 15).`,
+                                Los claros de bosque formados por la caída de las hojas posibilitan el crecimiento de plantas de sotobosque. En las zonas de mayor humedad del bosque seco tropical, se observan plantas siempreverdes (ver figura 2).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrJ2xrTrxTyKbY4GQMNST4j1k9qQQXKST2g&s", descripcion: "Figura 2. Bioma bosqué tropical seco."}
                   ]
                 },
                 {
@@ -1228,45 +1230,45 @@ export const modulos = {
 
                                 En este bioma, hay una gran diversidad de plantas epífitas como lianas, bromelias y orquídeas, las cuales aprovechan la luz del dosel.
 
-                                La corteza de los árboles del bosque tropical lluvioso suele ser delgada, pues debido a la elevada humedad, no corren el peligro de desecarse. Estas plantas suelen tener raíces de tipo gamba que sirven como contrafuerte (ver figura 16).`,
+                                La corteza de los árboles del bosque tropical lluvioso suele ser delgada, pues debido a la elevada humedad, no corren el peligro de desecarse. Estas plantas suelen tener raíces de tipo gamba que sirven como contrafuerte (ver figura 3).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Selva_Humeda_Farallones_de_Cali.JPG/1200px-Selva_Humeda_Farallones_de_Cali.JPG", descripcion: "Figura 3. Bioma Bosque tropical lluvioso."}
                   ]
                 },
                 {
                   subTitulo:"Sabana",
-                  descripcion: `Las sabanas son regiones de clima tropical seco. Se caracterizan por la abundante presencia de pastos. Debido a la baja precipitación, los árboles son escasos y se encuentran dispersos; por lo general, cerca de las fuentes de agua. Poseen hojas coriáceas y corteza gruesa para resistir al fuego, ya que, en la época seca, suelen caer muchos rayos (ver figura 17).`,
+                  descripcion: `Las sabanas son regiones de clima tropical seco. Se caracterizan por la abundante presencia de pastos. Debido a la baja precipitación, los árboles son escasos y se encuentran dispersos; por lo general, cerca de las fuentes de agua. Poseen hojas coriáceas y corteza gruesa para resistir al fuego, ya que, en la época seca, suelen caer muchos rayos (ver figura 4).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://cdn0.bioenciclopedia.com/es/posts/4/8/0/sabana_caracteristicas_flora_y_fauna_84_orig.jpg", descripcion: "Figura 4. Bioma Sabana."}
                   ]
                 },
                 {
                   subTitulo:"Desierto",
-                  descripcion: `Estos biomas se caracterizan por ser extensiones áridas e inhóspitas, con poca vida vegetal y animal debido a la baja precipitación. Existen desiertos cálidos y fríos. Los desiertos cálidos son muy calientes durante el verano y cálidos el resto del año. En los desiertos fríos, hay un largo invierno con temperaturas muy bajas (ver figura 18).
+                  descripcion: `Estos biomas se caracterizan por ser extensiones áridas e inhóspitas, con poca vida vegetal y animal debido a la baja precipitación. Existen desiertos cálidos y fríos. Los desiertos cálidos son muy calientes durante el verano y cálidos el resto del año. En los desiertos fríos, hay un largo invierno con temperaturas muy bajas.
 
                                 Muchas plantas de los desiertos cálidos, como los cactos, son capaces de almacenar agua en sus gruesos tallos protegidos por una cubierta cerosa. Además, tienen hojas modificadas en forma de espinas; de esta manera, evitan la desecación por transpiración y se protegen contra herbívoros.
 
-                                Las raíces de las plantas de los desiertos en general son muy extensas, de manera que puedan absorber rápidamente el agua de las escasas precipitaciones. En muchos casos, las semillas pueden permanecer latentes por un largo periodo, hasta que absorban suficiente agua para germinar y desarrollarse (ver figura 19).`,
+                                Las raíces de las plantas de los desiertos en general son muy extensas, de manera que puedan absorber rápidamente el agua de las escasas precipitaciones. En muchos casos, las semillas pueden permanecer latentes por un largo periodo, hasta que absorban suficiente agua para germinar y desarrollarse (ver figura 5).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://static.nationalgeographic.es/files/styles/image_3200/public/2462.600x450.webp?w=1600&h=900", descripcion: "Figura 5. Bioma desierto."}
                   ]
                 },
                 {
                   subTitulo:"Taiga",
                   descripcion: `En la taiga, hay inviernos largos y muy fríos con días cortos; y, veranos húmedos, con días largos y frecuentes incendios. La elevada precipitación cae como nieve en el invierno y como lluvia en el verano. Los suelos son poco profundos, ácidos y escasos en nutrientes.
 
-                                Las plantas dominantes son las coníferas como los pinos y los abetos. Estas plantas siempreverdes tienen hojas muy pequeñas con forma de aguja y una cubierta cerosa, para evitar la pérdida de agua por transpiración. El color oscuro de las hojas permite absorber la mayor cantidad de energía luminosa posible. La forma cónica de los árboles deja que la nieve se escurra (ver figura 20).`,
+                                Las plantas dominantes son las coníferas como los pinos y los abetos. Estas plantas siempreverdes tienen hojas muy pequeñas con forma de aguja y una cubierta cerosa, para evitar la pérdida de agua por transpiración. El color oscuro de las hojas permite absorber la mayor cantidad de energía luminosa posible. La forma cónica de los árboles deja que la nieve se escurra (ver figura 6).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://cdn0.bioenciclopedia.com/es/posts/0/8/0/taiga_que_es_y_caracteristicas_80_orig.jpg", descripcion: "Figura 6. Bioma de Taiga."}
                   ]
                 },
                 {
                   subTitulo:"Tundra",
                   descripcion: `La tundra es el bioma más seco y con la más baja temperatura del planeta. Los días de verano son de 24 horas debido a la cercanía al Polo Norte.
 
-                                La biodiversidad de la tundra es muy baja. Las plantas dominantes en este bioma son los musgos y pequeños arbustos. La poca altura de estos organismos contribuye a la resistencia contra el viento (ver figura 21).`,
+                                La biodiversidad de la tundra es muy baja. Las plantas dominantes en este bioma son los musgos y pequeños arbustos. La poca altura de estos organismos contribuye a la resistencia contra el viento (ver figura 7).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://concepto.de/wp-content/uploads/2018/10/tundra1-e1539985627461-800x400.jpg", descripcion: "Figura 7. Bioma de Tundra."}
                   ]
                 }
               ]
@@ -1276,22 +1278,22 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"Biomas acuáticos",
-                  descripcion: `Los biomas acuáticos pueden ser de agua dulce o salada. Las plantas de estos ecosistemas tienen a su disposición abundantes agua y minerales; sin embargo, deben efectuar adaptaciones especiales para el intercambio de gases y mantener el equilibrio osmótico. Algunos biomas acuáticos son los lagos, las lagunas y los manglares.`,
+                  descripcion: `Los biomas acuáticos pueden ser de agua dulce o salada. Las plantas de estos ecosistemas tienen a su disposición abundantes agua y minerales; sin embargo, deben efectuar adaptaciones especiales para el intercambio de gases y mantener el equilibrio osmótico. Algunos biomas acuáticos son los lagos, las lagunas y los manglares (ver figura 1).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://i0.wp.com/endemico.org/wp-content/uploads/2021/10/Canicura-1.jpg?fit=1800%2C966&ssl=1", descripcion: "Figura 1. Cuerpo de agua entre montañas."}
                   ]
                 },
                 {
                   subTitulo:"Lagos y lagunas",
                   descripcion: `Los lagos son extensos cuerpos de agua quieta, por lo general dulce, rodeados por tierra firme. Las lagunas son de menor tamaño. En sus orillas, se encuentran plantas ancladas en el sustrato, como la tifa (Typha sp.) y plantas flotantes como las del género Wolffia y el lirio o jacinto de agua, Eichhornia crassipes. Estas plantas habitan cerca de la superficie, con el fin de captar luz para la fotosíntesis.
 
-                                La mayoría de las plantas acuáticas son angiospermas, aunque también hay representantes de otros grupos, como el helecho acuático del género Azolla (ver figura 22).
+                                La mayoría de las plantas acuáticas son angiospermas, aunque también hay representantes de otros grupos, como el helecho acuático del género Azolla.
 
                                 Las plantas con hojas que permanecen sumergidas tienen hojas muy delgadas, lo cual facilita el intercambio gaseoso en el medio acuático. Asimismo, son capaces de captar luz de baja intensidad.
 
-                                Las raíces, los tallos y las hojas de las plantas acuáticas poseen un aerénquima bien desarrollado. Los grandes espacios llenos de aire de este tejido permiten la flotación. En ciertas especies, en los sustratos bajos en oxígeno, este gas se difunde de las hojas hasta las raíces vía aerénquima; asimismo, el dióxido de carbono de las raíces puede pasar a través del aerénquima a las hojas, el cual se aprovecha en la fotosíntesis (ver figura 23).`,
+                                Las raíces, los tallos y las hojas de las plantas acuáticas poseen un aerénquima bien desarrollado. Los grandes espacios llenos de aire de este tejido permiten la flotación. En ciertas especies, en los sustratos bajos en oxígeno, este gas se difunde de las hojas hasta las raíces vía aerénquima; asimismo, el dióxido de carbono de las raíces puede pasar a través del aerénquima a las hojas, el cual se aprovecha en la fotosíntesis (ver figura 2).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://cdn0.ecologiaverde.com/es/posts/0/2/7/50_plantas_acuaticas_nombres_y_caracteristicas_con_imagenes_1720_orig.jpg", descripcion: "Figura 2. Planta acúatica nenúfar."}
                   ]
                 },
                 {
@@ -1300,11 +1302,11 @@ export const modulos = {
 
                                 Se observan en las costas, en los estuarios, en las desembocaduras de ríos y en las marismas, entre otros.
 
-                                Se caracterizan por la presencia de árboles de mangle. Estos son tolerantes al agua salada, gracias a la presencia de un sistema de filtración de sales que le permite secretar el exceso de sal a través de glándulas localizadas en las hojas (ver figura 24).
+                                Se caracterizan por la presencia de árboles de mangle. Estos son tolerantes al agua salada, gracias a la presencia de un sistema de filtración de sales que le permite secretar el exceso de sal a través de glándulas localizadas en las hojas.
 
-                                Otra de las adaptaciones de los árboles de los manglares son las raíces fúlcreas y neumatóforos que posibilitan la sobrevivencia en suelos anegados, bajos en oxígeno (ver figura 25).`,
+                                Otra de las adaptaciones de los árboles de los manglares son las raíces fúlcreas y neumatóforos que posibilitan la sobrevivencia en suelos anegados, bajos en oxígeno (ver figura 3).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://wwflac.awsassets.panda.org/img/manglarescolombia2024_788879.jpg", descripcion: "Figura 3. Neumatóforos sobresaliendo del suelo."}
                   ]
                 }
               ]
@@ -1318,9 +1320,9 @@ export const modulos = {
                     Para contrarrestar los daños causados al planeta, los seres humanos han desarrollado estrategias que aprovechan el proceso natural de sucesión ecológica para la restauración de ambientes degradados. Siga los enlaces anteriores para conocer más sobre los conceptos mencionados.`,
           descripcion : [
             {
-              texto: ``,
+              texto: `En la siguiente imagen se puede apreciar la sucesión ambiental que ocurre para restablecer un bioma:`,
               imagen: [
-                { url:"", descripcion: "" }
+                { url:"https://ecosistemas.win/wp-content/uploads/la-sucesion-ecologica-clave-para-restaurar-los-ecosistemas.png", descripcion: "Proceso de la sucesión ecológica." }
               ]
             }
           ],
@@ -1331,25 +1333,25 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"Sucesión ecológica",
-                  descripcion: `La sucesión ecológica es un proceso que ocurre en la naturaleza y en el que se producen cambios secuenciales en las comunidades biológicas. Por ejemplo, cuando sucede una alteración en la naturaleza, como un incendio forestal, se establecen, primero, unas especies y estas, luego, son sustituidas por otras. Estas transformaciones son predecibles y se dan de manera relativamente ordenada. Hay dos tipos de sucesiones: primaria y secundaria.`,
+                  descripcion: `La sucesión ecológica es un proceso que ocurre en la naturaleza (ver figura 1) y en el que se producen cambios secuenciales en las comunidades biológicas. Por ejemplo, cuando sucede una alteración en la naturaleza, como un incendio forestal, se establecen, primero, unas especies y estas, luego, son sustituidas por otras. Estas transformaciones son predecibles y se dan de manera relativamente ordenada. Hay dos tipos de sucesiones: primaria y secundaria.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://bioteoria.wordpress.com/wp-content/uploads/2015/10/sucesic3b3n-eco.jpg", descripcion: "Figura 1. Etapas de la sucesión ecológica."}
                   ]
                 },
                 {
                   subTitulo:"Sucesión primaria",
                   descripcion: `La sucesión primaria ocurre en sitios baldíos donde no hay vida como resultado de la formación de un nuevo terreno, la exposición de roca nueva o el arrasamiento provocado por la lava de una erupción volcánica.
 
-                                La sucesión primaria inicia con el establecimiento de especies pioneras como líquenes y musgos. Estos cambian las características físicoquímicas del sustrato. Posteriormente, aparacen plantas de pequeño tamaño, como pastos, arbustos; y, luego, árboles, hasta culminar en una comunidad clímax dominada por ciertas especies. El equilibrio que caracteriza la comunidad clímax puede ser alterado por factores climáticos, ecológicos y evolutivos (ver figura 26 y 27).`,
+                                La sucesión primaria inicia con el establecimiento de especies pioneras como líquenes y musgos. Estos cambian las características físicoquímicas del sustrato. Posteriormente, aparacen plantas de pequeño tamaño, como pastos, arbustos; y, luego, árboles, hasta culminar en una comunidad clímax dominada por ciertas especies. El equilibrio que caracteriza la comunidad clímax puede ser alterado por factores climáticos, ecológicos y evolutivos (ver figura 2).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://cdn0.ecologiaverde.com/es/posts/1/5/4/sucesion_primaria_1451_1_600.jpg", descripcion: "Figura 2. Sucesión primaria."}
                   ]
                 },
                 {
                   subTitulo:"Sucesión secundaria",
-                  descripcion: `La sucesión secundaria pasa, con mayor frecuencia, en la naturaleza. Ocurre en sitios donde existía previamente una comunidad biológica, la cual fue afectada por alteraciones como la deforestación o el fuego. En este caso, pueden permanecer, en el terreno, nutrientes, materia orgánica, semillas y ciertos organismos, por eso, las plantas pueden colonizar el lugar más rápidamente. Por tanto, los cambios en las etapas tempranas de la sucesión secundaria se producen relativamente rápido. (ver figura 28).`,
+                  descripcion: `La sucesión secundaria pasa, con mayor frecuencia, en la naturaleza. Ocurre en sitios donde existía previamente una comunidad biológica, la cual fue afectada por alteraciones como la deforestación o el fuego. En este caso, pueden permanecer, en el terreno, nutrientes, materia orgánica, semillas y ciertos organismos, por eso, las plantas pueden colonizar el lugar más rápidamente. Por tanto, los cambios en las etapas tempranas de la sucesión secundaria se producen relativamente rápido. (ver figura 3).`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://twenergy.com/wp-content/uploads/2020/06/definici%C3%B3n-sucesi%C3%B3n-ecol%C3%B3gica.jpg", descripcion: "Figura 3. Restablecimiento de la flora de luego de un incendio."}
                   ]
                 }
               ]
@@ -1359,7 +1361,7 @@ export const modulos = {
               contenido: [
                 {
                   subTitulo:"Restauración de ambientes degradados",
-                  descripcion: `Los profesionales en manejo de recursos naturales, con frecuencia, deben darse a la tarea de restaurar los ambientes que han sido explotados de manera no sostenible. La restauración de ambientes degradados tiene por objetivo mitigar y revertir los daños producidos por el ser humano en los ecosistemas, con el fin de restablecer las características de los hábitats naturales.
+                  descripcion: `Los profesionales en manejo de recursos naturales, con frecuencia, deben darse a la tarea de restaurar los ambientes que han sido explotados de manera no sostenible (ver figura 1). La restauración de ambientes degradados tiene por objetivo mitigar y revertir los daños producidos por el ser humano en los ecosistemas, con el fin de restablecer las características de los hábitats naturales.
 
                                 Una estrategia para restaurar ambientes degradados es fomentar la sucesión ecológica mediante la regeneración natural. El proceso de regeneración natural es cuando, en un terreno, aparecen distintas plantas (de semillas que estaban en el sitio) sin intervención del ser humano.
 
@@ -1367,9 +1369,9 @@ export const modulos = {
 
                                 Entonces, primero, es necesario eliminar o controlar las especies no nativas o invasoras. Seguidamente, se debe cultivar plantas nativas propias del lugar, así como procurar que el sitio esté conectado con otros parches de hábitat natural.
 
-                                Las personas que disfrutan de un jardín o un patio pueden contribuir a restaurar el ambiente de su comunidad también al “imitar” la naturaleza. Así, al mantener las plantas nativas que naturalmente crecerían en el sitio, proveen alimento y refugio a polinizadores y otros animales silvestres. El aprovechamiento de los restos de estas plantas para fabricar compost también beneficia el suelo al aportarle materia orgánica (ver figura 29).`,
+                                Las personas que disfrutan de un jardín o un patio pueden contribuir a restaurar el ambiente de su comunidad también al “imitar” la naturaleza. Así, al mantener las plantas nativas que naturalmente crecerían en el sitio, proveen alimento y refugio a polinizadores y otros animales silvestres. El aprovechamiento de los restos de estas plantas para fabricar compost también beneficia el suelo al aportarle materia orgánica.`,
                   imagen: [
-                      {url:"", descripcion: ""}
+                      {url:"https://www.portalambiental.com.mx/sites/default/files/styles/full_content/public/media/image/2021/07/reforestacion_conafor.jpeg?itok=11owg_re", descripcion: "Figura 1. Reforestación de un valle tropical."}
                   ]
                 }
               ]

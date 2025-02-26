@@ -82,7 +82,7 @@ export const cuestionario = {
             problema:"Marque la afirmación incorrecta con respecto a los plastidios que se muestran en la imagen.",
             explicacion: "Los plastidios de la fotografía son un tipo de leucoplastos denominados amiloplastos, por su función de almacenar almidón. Se encuentran por lo general en órganos de almacenamiento como ciertas raíces y tallos. A diferencia de los cromoplastos y los cloroplastos, los leucoplastos carecen de color debido a que no almacenan pigmentos.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrn0lDYIHXdVxPbQYKmNf-DJ5-P20-jI4JA&s", descripcion: "Estructura de Amiloplastos"}
             ],
             alternativa:[
                 {respuesta: "Se encuentran en abundancia las células de la papa y la yuca", validez: false},
@@ -139,7 +139,7 @@ export const cuestionario = {
             problema:"El tejido meristemático de la imagen permite la elongación del tallo.",
             explicacion: "La estructura que se observa en la imagen corresponde a una raíz, por lo que el tejido meristemático que contiene es responsable de la elongación de la raíz.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://www.biologia.edu.ar/botanica/tema10/images10/raizpteridofita1.jpg", descripcion: "Meristema apical radical"}
             ],
             alternativa:[
                 {respuesta: "Falso", validez: true},
@@ -157,7 +157,7 @@ export const cuestionario = {
             problema:"¿Qué tipo de inflorescencia se muestra en la imagen?",
             explicacion: "La flor es un capítulo. Este tipo de inflorescencia consta de muchas flores sésiles pequeñas y muy unidas entre sí.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://cienciaybiologia.com/wp-content/uploads/2014/03/inflorescencia-capitulo-compuestas-600x400.jpg", descripcion: "Inflorecencias Florales."}
             ],
             alternativa:[
                 {respuesta: "Racimo", validez: false},
@@ -170,7 +170,7 @@ export const cuestionario = {
             problema:"¿Qué es lo que se muestra en la imagen?",
             explicacion: "El arroz y otros granos son cariópsides. Estos frutos son pequeños, secos e indehiscentes.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://static.wixstatic.com/media/193246_d5bd5165990d4075bc5507e7abd29bd9~mv2.jpg/v1/fill/w_568,h_380,al_c,lg_1,q_80,enc_auto/193246_d5bd5165990d4075bc5507e7abd29bd9~mv2.jpg", descripcion: "Arroz en grano"}
             ],
             alternativa:[
                 {respuesta: "Drupas", validez: false},
@@ -182,7 +182,7 @@ export const cuestionario = {
             problema:"Seleccione la afirmación incorrecta sobre los órganos de la imagen",
             explicacion: "La papa es un tubérculo, es decir, un tallo subterráneo que acumula sustancias de reserva gracias a la gran cantidad de amiloplastos que poseen sus células.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://plantix.net/es/library/assets/custom/crop-images/potato.jpeg", descripcion: "Planta de papa"}
             ],
             alternativa:[
                 {respuesta: "Son tallos tipo tubérculo", validez: false},
@@ -240,7 +240,7 @@ export const cuestionario = {
             problema:"Marque la afirmación incorrecta para la planta de la imagen",
             explicacion: "El maíz es una planta C4. Este tipo de plantas pueden habitar zonas calientes y áridas, debido a que tienen un mecanismo que les permite reducir la fotorrespiración: se produce un primer compuesto estable de 4 carbonos previo al ciclo de Calvin, el cual ocurre en las células de la vaina. De esta manera, pueden mantener sus estomas cerrados más tiempo sin disminuir la tasa de fotosíntesis.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://montanaweb-bucket.s3.amazonaws.com/web/blog/254/proceso-cultivo-maiz.jpeg", descripcion: "Mazorca de maíz"}
             ],
             alternativa:[
                 {respuesta: "En esta planta no ocurre el ciclo de Calvin", validez: true},
@@ -526,7 +526,7 @@ export const cuestionario = {
             problema:"En este bioma los árboles poseen hojas coriáceas y corteza gruesa para resistir el fuego.",
             explicacion: "En la sabana suelen caer muchos rayos en la época seca, por lo que los árboles poseen hojas coriáceas y corteza gruesa como adaptaciones para resistir el fuego.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://cdn0.bioenciclopedia.com/es/posts/4/8/0/sabana_caracteristicas_flora_y_fauna_84_orig.jpg", descripcion: "Bioma de sabana"}
             ],
             alternativa:[
                 {respuesta: "Falso", validez: false},
@@ -537,7 +537,7 @@ export const cuestionario = {
             problema:"Seleccione la afirmación incorrecta para el bioma de la imagen.",
             explicacion: "Los bosques tropicales lluviosos se caracterizan por su elevada precipitación anual y su gran variedad de plantas epífitas. Debido a las abundantes lluvias, las plantas suelen tener hojas con un ápice agudo para que el agua escurra con facilidad. Asimismo, se observan muchos árboles con gambas que sirven como contrafuerte.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://humanidades.com/wp-content/uploads/2017/04/bosque-tropical-5-e1567038841277.jpg", descripcion: "Bioma bosque tropical"}
             ],
             alternativa:[
                 {respuesta: "Muchas plantas epífitas habitan en este bioma", validez: false},
@@ -550,7 +550,7 @@ export const cuestionario = {
             problema:"Seleccione la afirmación incorrecta para el bioma de la imagen.",
             explicacion: "Los manglares son biomas de aguas salobres o saladas. Las plantas de estos biomas cuentan con adaptaciones para tolerar el agua salada y la baja aireación de los suelos; por ejemplo, raíces fúlcreas, neumatóforos y glándulas en las hojas que secretan el exceso de sal.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://www.fundacionaquae.org/wp-content/uploads/2019/07/que-es-un-manglar.jpg", descripcion: "Bioma de manglar"}
             ],
             alternativa:[
                 {respuesta: "Es un bioma de agua salobre o salada", validez: false},
@@ -563,7 +563,7 @@ export const cuestionario = {
             problema:"Seleccione la afirmación incorrecta para el bioma de la imagen.",
             explicacion: "La fotografía corresponde a una taiga. En este bioma la precipitación es elevada y dominan las coníferas. Las hojas de estas plantas tienen una cubierta cerosa que reduce la pérdida de agua por transpiración.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://cdn0.bioenciclopedia.com/es/posts/0/8/0/taiga_que_es_y_caracteristicas_80_orig.jpg", descripcion: "Bioma de taiga"}
             ],
             alternativa:[
                 {respuesta: "Es el bioma más seco del planeta", validez: true},
@@ -583,7 +583,7 @@ export const cuestionario = {
             problema:"Seleccione la opción incorrecta con respecto a la situación representada en la fotografía.",
             explicacion: "En el terreno arrasado con lava ocurrirá sucesión primaria. Musgos y líquenes serán los primeros colonizadores; posteriormente, se establecerán otras plantas, hasta culminar en una comunidad clímax con especies dominantes. El equilibrio de la comunidad clímax podría ser alterado por una nueva erupción volcánica u otros factores climáticos, ecológicos o evolutivos.",
             img:[
-                {url: "", descripcion: ""}
+                {url: "https://www.nps.gov/articles/000/images/20030816-1741_DAS_large.jpg?maxwidth=1300&autorotate=false", descripcion: "Lava activa"}
             ],
             alternativa:[
                 {respuesta: "En este sitio ocurrirá una sucesión primaria", validez: false},

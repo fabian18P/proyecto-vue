@@ -15,7 +15,7 @@
         <!-- Imagen de la carta -->
         <img
           class="w-40 h-40"
-          src="https://multimedia.uned.ac.cr/pem/planeta_planta/image/png/btn_estructura.png"
+          :src="modulo.img"
           alt="Imagen de ejemplo"
         />
         <!-- Título -->
